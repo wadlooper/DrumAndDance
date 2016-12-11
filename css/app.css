@@ -17,6 +17,21 @@ h2, h3, h4, p {
 	padding: 1rem 1rem;
 }
 
+.content.for-printing {
+	color: #222;
+	background-color: #eee;
+}
+
+.content.for-printing h4 {
+	color: #222;
+	background-color: #eee;
+}
+
+.content.for-printing p {
+	color: #222;
+	background-color: #eee;
+}
+
 .hero-image {
 	width: 100%;
 }
