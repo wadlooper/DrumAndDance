@@ -5,7 +5,7 @@ body {
 	color: #fff561;
 }
 
-h2, h3, h4, p {
+h1, h2, h3, h4, h5, h6, p {
 	color: #fff561;
 }
 
@@ -74,6 +74,24 @@ h2, h3, h4, p {
 	right: 0;
 }
 
+.gallery {
+	margin: 0.25rem 1.5rem;
+}
+
+.gallery .slick-slide {
+	margin: 0 0.5rem;
+	border: 5px red;
+	border-color: red
+}
+
+.gallery img {
+	height: 200px;
+}
+
+.slick-dots li button:before {
+	color: #fd7119;
+}
+
 .video-container {
 	width: 100%;
 	position: relative;
@@ -85,4 +103,9 @@ h2, h3, h4, p {
 	left: calc((100% - 640px)/2);
 }
 
+.photo-credit {
+	font-size: 75%;
+	margin-right: 1.5rem;
+	text-align: right;
+}
 

@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acton Drum and Dance</title>
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
     <div class="content">
@@ -44,6 +46,21 @@
       View the <a href="http://goo.gl/9RJmid" target="_blank">Map</a>
       or read our <a href="directions.html" target="_blank">written directions.</a>
       </p>
+
+      <div class="gallery">
+        <div><a href="images/slide1.jpg" target="_blank"><img src="images/slide1.jpg"/></a></div>
+        <div><a href="images/slide2.jpg" target="_blank"><img src="images/slide2.jpg"/></a></div>
+        <div><a href="images/slide3.jpg" target="_blank"><img src="images/slide3.jpg"/></a></div>
+        <div><a href="images/slide4.jpg" target="_blank"><img src="images/slide4.jpg"/></a></div>
+        <div><a href="images/slide5.jpg" target="_blank"><img src="images/slide5.jpg"/></a></div>
+        <div><a href="images/slide6.jpg" target="_blank"><img src="images/slide6.jpg"/></a></div>
+        <div><a href="images/slide7.jpg" target="_blank"><img src="images/slide7.jpg"/></a></div>
+        <div><a href="images/slide8.jpg" target="_blank"><img src="images/slide8.jpg"/></a></div>
+        <div><a href="images/slide9.jpg" target="_blank"><img src="images/slide9.jpg"/></a></div>
+        <div><a href="images/slide10.jpg" target="_blank"><img src="images/slide10.jpg"/></a></div>
+      </div>        
+
+      <!-- 
       <div class="video-container">
         <div class="video">
           <iframe title="AD&D Video" type="text/html" width="640" height="360" 
@@ -52,10 +69,30 @@
           </iframe>
         </div>
       </div>
-    </div>
+    -->
+      <div class="photo-credit">Photo Credit: <i>Mike Morin</i></div>
+
+    </div> <!-- End content class -->
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.gallery').slick({
+          dots: true,
+          infinite: true,
+          speed: 1000,
+          autoplaySpeed: 4000,
+          autoplay: true,
+          slidesToScroll: 1,
+          centerMode: true,
+          variableWidth: true
+        });
+      });
+    </script>
+
   </body>
 </html>
