@@ -1,3 +1,5 @@
+/** Rev June 2024 CW */
+
 body {
 	background-color: #222;
 	line-height: normal;
@@ -18,6 +20,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .content.for-printing {
+	color: #222;
+	background-color: #eee;
+}
+
+/** Rev June 2024 CW */
+.content.for-printing h3 {
 	color: #222;
 	background-color: #eee;
 }
