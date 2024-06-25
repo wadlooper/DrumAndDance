@@ -1,0 +1,28 @@
+# -----------------------------
+# DrumAndDance_net_htaccess 20240621
+# -----------------------------
+
+# secure htaccess file
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+
+# force text files to download
+AddType application/octet-stream txt
+
+# disable directory listings
+Options -Indexes
+
+# Rewrite rules
+RewriteEngine on
+
+# Reference https://help.dreamhost.com/hc/en-us/articles/215747758-Force-your-site-to-load-securely-with-an-htaccess-file
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# prevent direct linking of images
+RewriteCond %{HTTPS_REFERER} !^$
+RewriteCond %{HTTPS_REFERER} !^https://(www\.)?drumanddance.net/.*$ [NC]
+RewriteCond %{HTTPS_REFERER} !^https://(www\.)?drumanddance.net.*$ [NC]
+RewriteRule \.(gif|jpg|png|pdf)$ - [F]
