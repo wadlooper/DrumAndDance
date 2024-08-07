@@ -1,4 +1,4 @@
-/** Rev June 2024 CW */
+/** Rev June/July 2024 CW */
 
 body {
 	background-color: #222;
@@ -44,27 +44,31 @@ h1, h2, h3, h4, h5, h6, p {
 	width: 100%;
 }
 
+/** Rev July 2024 CW 
+	opacity: 0.75; */
 .hero-header {
 	color: #fd7119;
 	font-size: 2.5rem;
-	opacity: 0.75;
 	white-space: nowrap;
 }
 
+/** Rev July 2024 CW 
+	opacity: 0.75;
+	font-size: 0.75rem;	*/
 .hero-sub {
 	color: #fd7119;
 	margin-left: 1rem;
 	margin-bottom: 0.5rem;
-	opacity: 0.75;
 	font-style: italic;
-	font-size: 0.75rem;
+	font-size: 1rem;
 }
 
+/** Rev July 2024 CW 
+	opacity: 0.75; */
 .hero-text {
 	font-size: 1.25rem;
 	margin-left: 0rem;
 	color: #ffcb2a;
-	opacity: 0.75;
 }
 
 .front-nav {
