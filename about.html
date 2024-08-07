@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,17 +8,54 @@
     <title>Falmouth Drum and Dance 2024 - About</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
     <link rel="stylesheet" href="css/app.css">
+	
+	<style>
+	
+		/* overide app.css */
+		div.hero-header {
+			opacity: 1;
+		}
+		
+		div.hero-sub {
+			opacity: 1;
+			font-size: 1.25rem;
+		}
+
+		div.hero-text {
+			opacity: 1;
+		}
+		
+		/* If the screen size is 600px or less, hide the nav-bar-right and tweak the header etc. */
+		@media only screen and (max-width: 600px) {
+			div.nav-bar-right {
+				display: none;
+			}
+			
+			div.hero-header {
+				font-size: 1.25rem;
+			}
+			
+			div.hero-sub {
+				font-size: 1rem;
+			}
+		}
+	</style>
+		
   </head>
+  
   <body>
     <div class="content">
        <div class="nav-bar-right">
         <a href="index.html"><i class="fa fa-home"></i></a>
       </div>
 
-      <h4>Falmouth Drum and Dance 2024</h4>
+      <div class="hero-header">Falmouth Drum and Dance 2024</div>
+      <div class="hero-sub">A community rhythm celebration</div> 
+      <div class="hero-text">SATURDAY, September 28, 2024 7pm to 10pm</div>
+      <div class="hero-text">Cape Symphony’s Falmouth Recital Hall</div>
+      <div class="hero-text">60 Highfield Drive, Falmouth, MA</div>
+	  <br>
       <p>
       Celebrate an evening with drumming and dancing!  Falmouth Drum and Dance is about listening to each other, co-creating music and dancing our spirit.
 	  
@@ -31,7 +69,7 @@
 	  We welcome drummers, dancers, and rhythm/flow artists of all kinds.
 	  
       <p>
-      We'll dance and play to a mix of traditional African rhythms and organized rhythm jams. You're welcome to bring your own hand drums and percussion, or simply come to dance and enjoy. While many of us have studied drumming for years, others are new to the drum. We all can learn from each other as we create magical, danceable rhythms.
+      We'll dance and play to a mix of traditional West African rhythms and organized rhythm jams. You're welcome to bring your own hand drums and percussion, flow toys, or simply come to dance and enjoy. While many of us have studied drumming for years, others are new to the drum. We all can learn from each other as we create magical, danceable rhythms.
 	  
       <p>The event is free, family friendly, and is open to all ages and experience levels. Bring music from your heart and a sharing spirit. Please bring water to drink. No alcohol! Chairs will be provided for all.
 	  
@@ -56,61 +94,12 @@
       or read our <a href="directions.html" target="_blank">written directions.</a>
       </p><br><br>
 	  
-	  <h4>Acknowledgements</h4>
+	  <h4>Acknowledgments</h4>
 	  <p>Thanks to <a href="https://capesymphony.org/">Cape Symphony</a> for providing the venue and support for this event!</p>
-	  </p>Concord Drum and Dance picture courtesy of <a href="http://earthdrum.com/index.php/current-events/concord-drum-dance">Earth Drum Council</a>; photographer not identified.
+	  </p>Concord Drum and Dance picture courtesy of <a href="http://earthdrum.com/index.php/current-events/concord-drum-dance">Earth Drum Council</a>; photographer not identified.</p>
+	  <p>This web site is a fork of Jim Salem's <a href="http://www.actondrumdance.org/">actondrumdance.org</a>
 	  </p>
-<!-- 
-      <div class="gallery">
-        <div><a href="images/slide1.jpg" target="_blank"><img src="images/slide1.jpg"/></a></div>
-        <div><a href="images/slide2.jpg" target="_blank"><img src="images/slide2.jpg"/></a></div>
-        <div><a href="images/slide3.jpg" target="_blank"><img src="images/slide3.jpg"/></a></div>
-        <div><a href="images/slide4.jpg" target="_blank"><img src="images/slide4.jpg"/></a></div>
-        <div><a href="images/slide5.jpg" target="_blank"><img src="images/slide5.jpg"/></a></div>
-        <div><a href="images/slide6.jpg" target="_blank"><img src="images/slide6.jpg"/></a></div>
-        <div><a href="images/slide7.jpg" target="_blank"><img src="images/slide7.jpg"/></a></div>
-        <div><a href="images/slide8.jpg" target="_blank"><img src="images/slide8.jpg"/></a></div>
-        <div><a href="images/slide9.jpg" target="_blank"><img src="images/slide9.jpg"/></a></div>
-        <div><a href="images/slide10.jpg" target="_blank"><img src="images/slide10.jpg"/></a></div>
-      </div>         -->
-
-      <!-- 
-      <div class="video-container">
-        <div class="video">
-          <iframe title="AD&D Video" type="text/html" width="640" height="360" 
-            src="http://www.youtube.com/embed/eMqPyGvwxwA"
-            frameborder="0" allowFullScreen>
-          </iframe>
-        </div>
-      </div>
-    -->
-      <!-- <div class="photo-credit">Photo Credit: <i>Mike Morin</i></div> -->
-
-    </div> <!-- End content class -->
-
-<!--     <script src="js/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.gallery').slick({
-          dots: true,
-          infinite: true,
-          speed: 1000,
-          autoplaySpeed: 4000,
-          autoplay: true,
-          slidesToScroll: 1,
-          centerMode: true,
-          variableWidth: true
-        });
-      });
-    </script> -->
-
 
   </body>
-
-<!-- cw 2024-06-25 -->
 
 </html>

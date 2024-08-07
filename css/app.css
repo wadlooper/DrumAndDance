@@ -1,5 +1,3 @@
-/** Rev June/July 2024 CW */
-
 body {
 	background-color: #222;
 	line-height: normal;
@@ -24,11 +22,6 @@ h1, h2, h3, h4, h5, h6, p {
 	background-color: #eee;
 }
 
-/** Rev June 2024 CW */
-.content.for-printing h3 {
-	color: #222;
-	background-color: #eee;
-}
 
 .content.for-printing h4 {
 	color: #222;
@@ -44,31 +37,27 @@ h1, h2, h3, h4, h5, h6, p {
 	width: 100%;
 }
 
-/** Rev July 2024 CW 
-	opacity: 0.75; */
 .hero-header {
 	color: #fd7119;
 	font-size: 2.5rem;
 	white-space: nowrap;
+	opacity: 0.75;
 }
 
-/** Rev July 2024 CW 
-	opacity: 0.75;
-	font-size: 0.75rem;	*/
 .hero-sub {
 	color: #fd7119;
 	margin-left: 1rem;
 	margin-bottom: 0.5rem;
 	font-style: italic;
-	font-size: 1rem;
+	opacity: 0.75;
+	font-size: 0.75rem;
 }
 
-/** Rev July 2024 CW 
-	opacity: 0.75; */
 .hero-text {
 	font-size: 1.25rem;
 	margin-left: 0rem;
 	color: #ffcb2a;
+	opacity: 0.75;
 }
 
 .front-nav {
@@ -95,6 +84,7 @@ h1, h2, h3, h4, h5, h6, p {
 		height: 2rem;
 		background-color: #111;
 	}
+
 }
 
 @media screen and (max-width: 15rem) {
